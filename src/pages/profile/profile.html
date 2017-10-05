@@ -3,9 +3,10 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Profile</ion-title>
+    <ion-title>Planifications des soins</ion-title>
   </ion-navbar>
 </ion-header>
+
 
 
 <ion-content padding *ngFor="let post of posts | slice:0:1 ">
@@ -17,16 +18,31 @@
    <h1 style="text-align:center">Planifications des soins</h1>
 
    <div class="note">
-     <p>Note: </p>
-   <p> Dernier cachet de Dolipranne prit à 10h45</p>
+     <p>  <ion-icon ios="ios-warning" md="md-warning"></ion-icon> Note: 
+ Dernier cachet de Dolipranne prit à 10h45</p>
    </div>
 
-    <ion-label>300mg Baclofine</ion-label>
+   <h3>Prescriptions</h3>
+   <p></p>
+
+  <ion-list no-lines class="item-borderless">
+    <ion-item no-lines>
+           <ion-label>300mg Baclofine</ion-label>
     <ion-checkbox ></ion-checkbox>
+    </ion-item>
+
+        <ion-item no-lines>
+           <ion-label>250mg Bivitine</ion-label>
+    <ion-checkbox ></ion-checkbox>
+    </ion-item>
 
 
-    <ion-label>250mg Bevitine</ion-label>
-    <ion-checkbox ></ion-checkbox>
+
+  </ion-list>
+
+    <button ion-button block color="secondary">Valider</button>
+
+
 
 
 </ion-content>

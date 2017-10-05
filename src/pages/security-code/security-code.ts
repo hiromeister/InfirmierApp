@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { ProfilePage} from '../profile/profile';
 
+import { HomePage } from '../home/home';
+
 @IonicPage()
 @Component({
   selector: 'page-security-code',
@@ -17,6 +19,10 @@ export class SecurityCodePage {
 
   goToProfile(){
     this.navCtrl.push(ProfilePage);
+  }
+
+    goToHome(){
+    this.navCtrl.push(HomePage);
   }
 
 }

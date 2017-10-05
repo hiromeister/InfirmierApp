@@ -10,8 +10,6 @@ page-profile {
        
     }
     
-
-
     h2, p {
         display:inline;
         
@@ -24,4 +22,26 @@ page-profile {
     .content-ios hr,.content-md hr  {
          background-color: #488aff;
     }
+    
+    .note {
+        background-color: #F2F2F2;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    ion-list{
+        margin: 0 auto;
+    }
+
+            .disable-hover.button.button-ios.button-default.button-default-ios.button-block.button-block-ios.button-ios-secondary{
+        margin: 0 auto;
+        width:30vh;
+
+    }
+
+
 }
