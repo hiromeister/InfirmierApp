@@ -1,0 +1,27 @@
+page-profile {
+    h2{
+        text-align: left;
+        padding: 15px 0;
+    }
+    
+    hr{
+         background-color: #488aff;
+        border:1px solid #488aff;
+       
+    }
+    
+
+
+    h2, p {
+        display:inline;
+        
+    }
+
+    p {
+      padding-left: 30px;
+    }
+
+    .content-ios hr,.content-md hr  {
+         background-color: #488aff;
+    }
+}

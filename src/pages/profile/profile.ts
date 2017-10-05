@@ -4,21 +4,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { SecurityCodePage } from '../security-code/security-code';
-
-
 @IonicPage()
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html',
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
 })
-
-
-
-export class ListPage {
-
-  posts:any;
-
+export class ProfilePage {
+posts: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public http:Http) {
 
     this.http.get('/assets/users.json').map(res => res.json()).subscribe(data => {
@@ -29,14 +21,4 @@ export class ListPage {
     });
   }
 
-  secureCode(){
-    this.navCtrl.push(SecurityCodePage);
-
-  }
-
-
- 
-
-} 
-
-
+}

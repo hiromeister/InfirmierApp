@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+
+  <h1 padding>Ajout du patient</h1>
+  <hr>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Nom</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label color="primary" stacked>Prenom</ion-label>
+    <ion-input type="text" [(ngModel)]="surname"></ion-input>
+  </ion-item>
+
+      <ion-item>
+    <ion-label color="primary" stacked>Date de naissance</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+      <ion-item>
+    <ion-label color="primary" stacked>Sexe</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label color="primary" stacked>Âge</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+  
+    <ion-item>
+    <ion-label color="primary" stacked>Adresse</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+      <ion-item>
+    <ion-label color="primary" stacked>Medecin traitant</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label color="primary" stacked>Groupe Sanguin</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label color="primary" stacked>Antécédants</ion-label>
+    <ion-input type="text" placeholder=""></ion-input>
+  </ion-item>
+
+  <button ion-button class="submit-btn" full (click)="addPatient()" >Ajouter </button>
+
+</ion-content>

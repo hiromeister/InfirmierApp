@@ -1,3 +1,52 @@
 page-list {
 
+    div.scroll-content{
+        background-color:#F2F2F2;
+    }
+    h1 {
+        text-align: center;
+        color : #488aff ;   
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+ div.input-wrapper p{
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     font-weight: bold;
+
+     margin-left: 30px;
+}
+
+div.input-wrapper { 
+    padding: 7px 0;
+    background-color:#fff;
+    border-radius: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+
+
+}
+
+.item-input::after {
+border-bottom-color: transparent !important;
+}
+
+.list a.item
+{
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+}
+
+ion-item.item.item-block.item-ios {
+    background-color: #F2F2F2;
+}
+
+span { 
+    font-weight: normal;
+    margin-left: 50px;
+}
+
 }
